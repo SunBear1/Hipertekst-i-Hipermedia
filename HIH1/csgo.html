@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="csgo.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title> PROJEKT WAI&HiH </title>
+    <script>
+        function clickCounterl() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("resultl").innerHTML = "Strzeliłeś lokalnie już " + localStorage.clickcount + " razy.";
+            }
+        }
+        function clickCounters() {
+            if (typeof (Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                } else {
+                    sessionStorage.clickcount = 1;
+                }
+                document.getElementById("results").innerHTML = "Strzeliłeś w obecnej sesji już " + sessionStorage.clickcount + " razy.";
+            }
+        }
+    </script>
+    <style>
+
+        .toggler {
+            width: 800px;
+            height: 300px;
+            position: relative;
+        }
+
+        button {
+            background-color: #664848;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Muli', sans-serif;
+            display: inline-block;
+            margin: 4px 2px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        #effect {
+            width: 800px;
+            height: 300px;
+            padding: 0.4em;
+            position: relative;
+            background: #664848;
+        }
+
+            #effect h3 {
+                margin: 0;
+                padding: 0.4em;
+                text-align: center;
+            }
+    </style>
+    <script>
+        $(function () {
+            var state = true;
+            $("#button").on("click", function () {
+                if (state) {
+                    $("#effect").animate({
+                        backgroundColor: "#664848",
+                        color: "#fff",
+                        width: 800
+                    }, 1000);
+                } else {
+                    $("#effect").animate({
+                        backgroundColor: "#222",
+                        color: "#fff",
+                        width: 440
+                    }, 1000);
+                }
+                state = !state;
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>COUNTER STRIKE</h1>
+        <h2>GLOBAL OFFENSIVE</h2>
+        <br>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lolxml.xml">League of Legends</a></li>
+        <li><a class="active" href="csgo.html">Counter Strike</a></li>
+        <li><a  href="ov.html">Overwatch</a></li>
+        <li class="dropdown">
+            <a class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="galeria.html">Galeria</a>
+                <a href="form.html">Formularz</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="column">
+            <div class="toggler">
+                <div id="effect" class="ui-widget-content ui-corner-all">
+                    <h3 class="ui-widget-header ui-corner-all">Rozgrywki</h3>
+                    <p>
+                        ESL Mistrzostwa Polski to najdłużej działający i najbardziej prestiżowy polski cykl rozgrywek esportowych. W 2019 roku w ramach ESL MP odbywać się będą rozgrywki w Counter-Strike: Global Offensive w którym do wygrania będzie w sumie aż
+                        180 000 złotych!
+                        <br />
+                    </p>
+                </div>
+                <br />
+            </div>
+            <br />
+            <button id="button" class="ui-state-default ui-corner-all">Zwiń</button>
+            <br>
+            <h3>Strzelanie lokalne</h3>
+            <p><button onclick="clickCounterl()" type="button">STRZEL</button></p>
+            <wynik id="resultl"></wynik>
+            <h3>Strzelanie w sesji</h3>
+            <p><button onclick="clickCounters()" type="button">STRZEL</button></p>
+            <wynik id="results"></wynik>
+        </div>
+        <div class="column">
+
+            <img src="csgo.jpg" alt="esport-home" width="740" height="416">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>&copy;  2019 Łukasz Niedźwiadek</footer>
+</body>
+</html>

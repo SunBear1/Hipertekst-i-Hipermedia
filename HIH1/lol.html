@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lol.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title> PROJEKT WAI&HiH </title>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+    <script>
+        function add() {
+            var para = document.createElement("P");
+            para.innerText = "FunPlus Phoenix!!!";
+            document.body.appendChild(para);
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+      <h1>LEAGUE OF LEGENDS</h1>
+        <br>
+    </div>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="lol.html">League of Legends</a></li>
+        <li><a  href="csgo.html">Counter Strike</a></li>
+        <li><a  href="ov.html">Overwatch</a></li>
+        <li class="dropdown">
+            <a class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="galeria.html">Galeria</a>
+                <a href="form.html">Formularz</a>
+            </div>
+        </li>
+    </ul>
+    
+    <div class="row">
+        <div class="column">
+            <br />
+            <br />
+            <span>FANPLUS PHONEIX MISTRZEW ŚWIATA</span>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <a href="https://eune.leagueoflegends.com" target="_blank"><img class="picture" src="lol.png" alt="esport-home" width="438" height="250"></a>
+        </div> 
+      <div class="column">
+         
+    </div>
+    </div>
+    <br>
+    <br>
+    <footer>&copy;  2019 Łukasz Niedźwiadek</footer>
+    </body>
+</html>
