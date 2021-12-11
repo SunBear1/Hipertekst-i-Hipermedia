@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title> PROJEKT WAI&HiH </title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="Home">FORMULARZ</h1>
+        <br>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lolxml.xml">League of Legends</a></li>
+        <li><a href="csgo.html">Counter Strike</a></li>
+        <li><a href="ov.html">Overwatch</a></li>
+        <li class="dropdown">
+            <a class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a  href="galeria.html">Galeria</a>
+                <a class="active" href="form.html">Formularz</a>
+
+            </div>
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="column">
+                <form action="form.html" oninput="x.value=parseInt(a.value)">
+                    <p>Bardzo bym cię prosił o wypełnienie ankiety o mojej stronie!</p>
+                    <p>Imię:</p>
+                    <input type="text" name="imie" >
+                    <br>
+                    <p>Nazwisko:</p>
+                    <input type="text" name="nazwisko" >
+                    <br>
+                    <p>Adres zamieszkania: </p>
+                    <input type="text" name="adres" >
+                    <br>
+                    <br>
+                    <input type="radio" name="typadres" value="miasto" checked><span class="tekst">Miasto</span>
+                    <input type="radio" name="typadres" value="wies"> <span class="tekst">Wieś</span>
+                    <input type="radio" name="typadres" value="inne"> <span class="tekst">Szałas</span>
+                    <br>
+                    <br>
+                    <select name="plec">
+                            <option value="men">Mężczyzna</option>
+                            <option value="women">Kobieta</option>
+                    </select>
+                    <br><br>
+                    <p>W jaką grę grasz?</p>
+                    <input type="checkbox" name="gra1" value="lol"> <span class="tekst" >League of Legends</span><br>
+                    <input type="checkbox" name="gra2" value="ov"> <span class="tekst" >Overwatch</span><br>
+                    <input type="checkbox" name="gra3" value="csgo checked"><span class="tekst" >Counter Strike</span> <br><br>
+                    <p class="tekst">Oceń moją stronę !</p>
+                    <span class="tekst">0</span>
+                    <input type="range" id="a" name="a" value="50">
+                    <output class="tekst" name="x" for="a"></output>
+                    <br><br>
+                    <br>
+
+                    <br>
+                    <textarea id="B" name="opinia" style="width:500px; height:100px;">Napisz komentarz !</textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Wyślij"  onclick="alert('Dziękuje za wypełnienie ankiety')" >
+                    <input type="reset" value="Wyczyść">
+                  </form> 
+        </div>
+
+        <div class="column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quaerat ex cupiditate quae sapiente tempora illo repellendus error et incidunt similique nihil animi quo quia inventore ipsa, commodi quidem modi?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quas natus deserunt dolore obcaecati beatae mollitia corporis nam. Sunt totam nulla consequatur, iusto provident dicta tenetur unde eaque accusamus ipsam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia, deleniti distinctio, quas voluptates ipsum ducimus architecto quis veritatis quasi perspiciatis neque iusto harum. Autem ratione libero eligendi labore qui.
+                   </p>
+        </div>
+
+        <div class="column">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quaerat ex cupiditate quae sapiente tempora illo repellendus error et incidunt similique nihil animi quo quia inventore ipsa, commodi quidem modi?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quas natus deserunt dolore obcaecati beatae mollitia corporis nam. Sunt totam nulla consequatur, iusto provident dicta tenetur unde eaque accusamus ipsam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia, deleniti distinctio, quas voluptates ipsum ducimus architecto quis veritatis quasi perspiciatis neque iusto harum. Autem ratione libero eligendi labore qui.
+           </p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quaerat ex cupiditate quae sapiente tempora illo repellendus error et incidunt similique nihil animi quo quia inventore ipsa, commodi quidem modi?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quas natus deserunt dolore obcaecati beatae mollitia corporis nam. Sunt totam nulla consequatur, iusto provident dicta tenetur unde eaque accusamus ipsam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia, deleniti distinctio, quas voluptates ipsum ducimus architecto quis veritatis quasi perspiciatis neque iusto harum. Autem ratione libero eligendi labore qui.
+           </p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quaerat ex cupiditate quae sapiente tempora illo repellendus error et incidunt similique nihil animi quo quia inventore ipsa, commodi quidem modi?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quas natus deserunt dolore obcaecati beatae mollitia corporis nam. Sunt totam nulla consequatur, iusto provident dicta tenetur unde eaque accusamus ipsam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia, deleniti distinctio, quas voluptates ipsum ducimus architecto quis veritatis quasi perspiciatis neque iusto harum. Autem ratione libero eligendi labore qui.
+           </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>&copy;  2019 Łukasz Niedźwiadek </footer>
+</body>
+</html>

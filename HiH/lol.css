@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 0;
+    background-color: #222;
+  }
+  h1{
+      color: #f2f2f2;
+      font-family: 'Muli', sans-serif;
+      text-align: center;
+      font-size: 50px;
+  }
+span {
+    width: 500px;
+    padding: 8px;
+    height: 200px;
+    background-color: white;
+    -webkit-animation-name: szalenstwo;
+    -webkit-animation-duration: 6s;
+    animation-name: szalenstwo;
+    animation-duration: 7s;
+    animation: szalenstwo 3s linear 2s infinite alternate;
+    border-radius: 8px;
+    font-size: 40px;
+    position: relative;
+    font-family: 'Muli', sans-serif;
+}
+@keyframes szalenstwo {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: #664848;
+    }
+
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: #664848;
+        left: 840px;
+        top: 0px;
+    }
+}
+  footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #664848;
+   color: white;
+   text-align: center;
+   font-family: 'Muli', sans-serif;
+  }
+  h2{
+    font-family: 'Muli', sans-serif;
+    color: #f2f2f2;
+    font-size: 35px;
+  }
+table {
+    font-family: 'Muli', sans-serif;
+    border-collapse: collapse;
+    width: 196%;
+    border: 5px solid #664848;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: floralwhite;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: floralwhite;
+}
+
+button {
+    background-color: #664848;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 30px;
+    cursor: pointer;
+}
+p {
+    color: #f2f2f2;
+    font-size: 20px;
+}
+.tekst{
+  color: aquamarine;
+}
+  .header {
+    background-color: #222;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #664848;
+  }
+  
+  li {
+    float: left;
+    background-color: #664848;
+  }
+  
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'Muli', sans-serif;
+        font-size: 20px;
+    }
+        .active {
+            background-color: #222;
+            }
+  
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: #f2f2f2;
+            color: black;
+        }
+  
+    li.dropdown {
+        display: inline-block;
+    }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #664848;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+  
+  }
+  
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        color: #f2f2f2;
+    }
+  
+        .dropdown-content a:hover {
+            background-color: #f2f2f2;
+            color: black;
+        }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width:1200px) {
+    .column {
+      width: 100%;
+    }
+    img.picture {
+        display: none;
+    }
+  }

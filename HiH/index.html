@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title> PROJEKT WAI&HiH </title>
+    <script>
+        function changeText(id) {
+            id.innerHTML = "E-SPORT";
+        }
+    </script>
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1 onclick="changeText(this)">SPORT</h1>
+        <br>
+    </div>
+    
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="lolxml.xml">League of Legends</a></li>
+        <li><a href="csgo.html">Counter Strike</a></li>
+        <li><a href="ov.html">Overwatch</a></li>
+        <li class="dropdown">
+            <a class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="galeria.html">Galeria</a>
+                <a href="form.html">Formularz</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="column">
+            <h2 id="e">Katowice stolicą polskiego esportu</h2>
+            <p>
+                    Ostatni IEM pokazał siłę drzemiącą w polskim e-sporcie. Spodek odwiedziło 170 tys. osób, które obserwowały najlepszych e-sportowców i brały udział w przygotowanych atrakcjach. Choć IEM to obecnie nasza wizytówka, to potencjał drzemiący w rodzącej się branży jest ogromny. Już w przyszłym roku jej wartość ma przekroczyć miliard dolarów.
+            </p>
+            <br />
+            <button type="button"
+                    onclick="document.getElementById('e').style.color = 'green';">
+                Zielony
+            </button>
+            <button type="button"
+                    onclick="document.getElementById('e').style.color = 'blue';">
+                Niebieski
+            </button>
+            <button type="button"
+                    onclick="document.getElementById('e').style.color = 'red';">
+                Czerwony
+            </button>
+            <button type="button"
+                    onclick="document.getElementById('e').style.color = 'white';">
+                Reset
+            </button>
+        </div>
+
+        <div class="column">
+            <h2>Kilka Faktów</h2>
+                <p>Najpopularniejszym e-sportowym wydarzeniem w historii były Mistrzostwa Świata Sezonu 7 w League of Legends, gdzie w niektórych momentach jednocześnie zmagania graczy oglądało ponad 100 milionów osób. Największa historyczna pieniężna pula nagród została zgromadzona w turnieju The International 2018 w grze komputerowej Dota 2 i wynosiła ponad 25 mln dolarów.</p>
+                <p>Według raportu PayPala oraz SuperData na temat polskiego rynku e-sportowego szacuje się, że w Polsce jest około 923 tysięcy graczy. Stanowi to 3,30% wszystkich internautów w Polsce. Natomiast liczba ta do 2019 roku może zwiększyć się do 1,5 mln osób.</p>
+                <p id="x"></p>
+                <script>
+                    var para = document.createElement("p");
+                    var node = document.createTextNode("(jestem dodany przez JS)  League of Legends to obecnie najpopularniejsza dyscyplina e-sportu. Mistrzostwa świata w tę grę w 2016 roku oglądało 43 miliony widzów. Warto dodać, że mowa nie o pojedynczym meczu, a całej serii spotkań, składających się na mistrzostwa.");
+                    para.appendChild(node);
+                    var element = document.getElementById("x");
+                    element.appendChild(para);
+            </script>
+        </div>
+
+        <div class="column">
+            <img class="picture" src="img1.jpg" alt="esport-home" >
+            <button onclick="displayDate()">Godzina</button>
+            <p id="demo"></p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>&copy;  2019 Łukasz Niedźwiadek</footer>
+</body>
+</html>

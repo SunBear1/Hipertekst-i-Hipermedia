@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Esport>
+  <ligi typ="krajowe">
+      <liga kraj="polska">
+        <information>
+          <links>
+            <link source="https://ultraliga.pl/">Informacje o lidze</link>
+            <link source="https://devils.one/pl/">informacje o zwyciezcy</link>
+          </links>
+          <nazwa>Ultraliga</nazwa>
+          <zwyciezca ilosc_tytulow="1">Devils one</zwyciezca>
+          <organizator>Polsat</organizator>
+        </information>
+      </liga>
+      <liga kraj="niemcy">
+        <information>
+          <links>
+            <link source="https://www.premiertour.gg/de/start">Informacje o lidze</link>
+            <link source="http://www.mousesports.com/">informacje o zwyciezcy</link>
+          </links>
+          <nazwa>Premier Tour</nazwa>
+          <zwyciezca ilosc_tytulow="2">Mouseesports</zwyciezca>
+          <organizator>Riot Games</organizator>
+        </information>
+      </liga>
+      <liga kraj="wielka_brytania">
+        <information>
+          <links>
+            <link source="https://uklc.lvp.global/">Informacje o lidze</link>
+            <link source="https://www.fnatic.com/">informacje o zwyciezcy</link>
+          </links>
+          <nazwa>UK League Championship</nazwa>
+          <zwyciezca ilosc_tytulow="4">Fnatic Rising</zwyciezca>
+          <organizator>Riot Games</organizator>
+        </information>
+      </liga>
+      <liga kraj="hiszpania">
+        <information>
+          <links>
+            <link source="https://www.lvp.es/superliga">Informacje o lidze</link>
+            <link source="https://www.giantsgaming.pro/en/">informacje o zwyciezcy</link>
+          </links>
+          <nazwa>SuperLiga Orange</nazwa>
+          <zwyciezca ilosc_tytulow="3">Vodafone Giants</zwyciezca>
+          <organizator>LVP</organizator>
+        </information>
+      </liga>
+    </ligi>
+    <ligi typ="regionalne">
+      <liga region="europa">
+        <information>
+          <links>
+            <link source="https://eu.lolesports.com/pl/liga/lec">Informacje o lidze</link>
+          </links>
+           <nazwa>LEC</nazwa>
+           <zwyciezca sezon="wiosna">G2 Esports</zwyciezca>
+           <zwyciezca sezon="lato">G2 Esports</zwyciezca>
+           <MVP sezon="wiosna" narodowosc="dania" druzyna="G2 Esports">Caps</MVP>
+           <MVP sezon="lato" narodowosc="polska" druzyna="G2 Esports">Jankos</MVP>
+           <organizator>Riot Games</organizator>
+        </information> 
+      </liga>
+      <liga region="ameryka">
+        <information>
+          <links>
+            <link source="https://eu.lolesports.com/pl/liga/lcs">Informacje o lidze</link>
+          </links>
+          <nazwa>LCS</nazwa>
+          <zwyciezca sezon="wiosna">Team Liquid</zwyciezca>
+          <zwyciezca sezon="lato">Team Liquid</zwyciezca>
+          <MVP sezon="wiosna" narodowosc="USA" druzyna="Team Liquid">Doublelift</MVP>
+          <MVP sezon="lato" narodowosc="dania" druzyna="Cloud 9">Svenskeren</MVP>
+          <organizator>Riot Games</organizator>
+        </information>
+      </liga>
+      <liga region="korea">
+        <information>
+          <links>
+            <link source="https://eu.lolesports.com/pl/liga/lck">Informacje o lidze</link>
+          </links>
+          <nazwa>LCK</nazwa>
+          <zwyciezca sezon="wiosna">SK Telecom T1</zwyciezca>
+          <zwyciezca sezon="lato">SK Telecom T1</zwyciezca>
+          <MVP sezon="wiosna" narodowosc="korea" druzyna=" SK Telecom T1">Clid</MVP>
+          <MVP sezon="lato" narodowosc="korea" druzyna="DAMWON Gaming">Canyon</MVP>
+          <organizator>Riot Games</organizator>
+        </information>
+      </liga>
+      <liga region="chiny">
+      <information>
+        <links>
+          <link source="https://eu.lolesports.com/pl/liga/lpl">Informacje o lidze</link>
+        </links>
+        <nazwa>LPL</nazwa>
+        <zwyciezca sezon="wiosna">FunPlus Phoenix</zwyciezca>
+        <zwyciezca sezon="lato">FunPlus Phoenix</zwyciezca>
+        <MVP sezon="wiosna" narodowosc="chiny" druzyna="Top Esports">Knight9</MVP>
+        <MVP sezon="lato" narodowosc="chiny" druzyna="FunPlus Phoenix">Crisp</MVP>
+        <organizator>Riot Games</organizator>
+      </information>
+      </liga>
+  </ligi>
+  <turnieje>
+      <MSI typ="miedzynarodowy" lokalizacja="Tajwan">
+        <media>
+          <image source="MSI.jpg">Mid-Season Invitational</image>
+        </media>
+      </MSI>
+      <Worlds typ="miedzynarodowy" lokalizacja="Francja">
+        <media>
+          <image source="Worlds.jpg">World Championship</image>
+        </media>
+      </Worlds>
+      <RiftRivals typ="miedzynarodowy" lokalizacja="USA">
+        <image source="Worlds.jpg">Rift Rivals</image>
+      </RiftRivals>
+      <EUmasters typ="regionalny">
+        <tekst jezyk="angielski">
+          EU Masters is back for its fourth season with Summer 2019. The best 20 teams from Europe’s Regional Leagues clash in a three week long battle royale as they vie for the crown of European Masters and their share of the 150,000 Euros prize pool. With one third of this season’s LEC players having played in the European Regional Leagues (ERLs) within the past 12 months, all eyes will be on the event as we watch the LEC stars of the future battle it out on the Rift.
+        </tekst>
+      </EUmasters>
+      <PLE typ="krajowy">
+        <tekst jezyk="polski">
+          Polska Liga Esportowa bez gry League of Legends nie byłaby tym samym. Dlatego też włodarze ligi nie chcą rezygnować z jednego z najpopularniejszych tytułów nad Wisłą i kontynuują organizowanie rozgrywek dla najlepszych polskich zespołów.
+
+          Już 31 maja startuje Warsaw Games Show, a wraz z nim zmagania zawodników League of Legends w ramach Polskiej Ligi Esportowej. Zawodnicy zmierzą się ze sobą w rozgrywkach offline, które na żywo będą mogli podziwiać wszyscy zainteresowani kibice. Tegoroczne etapy LoL-a będą nie lada gratką dla wszystkich fanów tej popularnej gry – organizatorzy Polskiej Ligi Esportowej szykują aż 5 etapów, które będziemy mieli okazję śledzić od czerwca do października.
+        </tekst>
+      </PLE>
+  </turnieje>
+</Esport>
